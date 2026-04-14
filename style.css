@@ -1,0 +1,70 @@
+body{
+  margin:0;
+  background:black;
+  color:white;
+  font-family:'Creepster',cursive;
+  overflow:hidden;
+}
+
+#container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  z-index:20;
+}
+
+#title{font-size:65px;}
+
+#start{
+  margin-top:25px;
+  padding:10px 25px;
+  border:1px solid white;
+  cursor:pointer;
+}
+
+#img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:360px;
+  transform:translate(-50%, -50%) scale(0.8);
+  opacity:0;
+  transition:1.5s;
+  z-index:5;
+}
+
+#text{
+  position:absolute;
+  bottom:12%;
+  width:100%;
+  text-align:center;
+  font-size:42px;
+  opacity:0;
+  transition:0.6s;
+  z-index:15;
+}
+
+.laser{
+  position:absolute;
+  width:10px;
+  height:350px;
+  background:linear-gradient(white, red, transparent);
+  transform-origin:top;
+  display:none;
+  z-index:10;
+  filter:blur(1px);
+}
+
+.laser::before{
+  content:"";
+  position:absolute;
+  top:-12px;
+  left:-12px;
+  width:30px;
+  height:30px;
+  background:radial-gradient(circle, white, red, transparent);
+  border-radius:50%;
+  filter:blur(4px);
+}

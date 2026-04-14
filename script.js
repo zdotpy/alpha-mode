@@ -22,7 +22,7 @@ window.onload = function(){
     },300);
 
     setTimeout(()=>{
-      text.innerText="now watch this. alpha mode on";
+      text.innerText="now watch this. alpha mode on 😈😈";
     },1800);
 
     setTimeout(()=>{
